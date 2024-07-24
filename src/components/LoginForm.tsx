@@ -22,7 +22,7 @@ export const LoginForm = () => {
     return (
         <StyledLogin>
             <div>
-                <h2>Login v3</h2>
+                <h2>Login</h2>
                 <form onSubmit={handleSubmit} >
                     <label htmlFor="username">Username</label>
                     <Input name="username" id="username" />
