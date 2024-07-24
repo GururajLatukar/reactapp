@@ -1,6 +1,13 @@
+import styled from "styled-components";
+
+const StyledHeading = styled.h2`
+    text-align: center;
+    margin-top: 50vh;
+`;
+
 export const NotFound = () => {
     return (
-        <h2>404 - Page Not Found</h2>
+        <StyledHeading>404 - Page Not Found</StyledHeading>
     )
 }
 

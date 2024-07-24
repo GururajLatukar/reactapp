@@ -16,7 +16,7 @@ const StyledLogin = styled.div`
 export const LoginForm = () => {
     const handleSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault()
-        alert("Login in module is under contruction!!")
+        alert("Login module is under construction!!")
     }
 
     return (
