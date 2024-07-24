@@ -1,6 +1,10 @@
+import LoginForm from "../components/LoginForm";
+
 export const Home = () => {
   return (
-    <div>Home</div>
+    <div className="container">
+        <LoginForm />
+    </div>
   )
 }
 
