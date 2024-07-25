@@ -1,17 +1,6 @@
-import styled from "styled-components";
+import StyledLoginForm from "./LoginForm.style"
 import Button from "./ui-kit/Button"
 import Input from "./ui-kit/Input"
-
-const StyledHeader = styled.h2`
-  text-align: center;
-`;
-
-const StyledLogin = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
-  margin: 22vh auto;
-`;
 
 export const LoginForm = () => {
     const handleSubmit = (e: React.SyntheticEvent) => {
@@ -20,8 +9,8 @@ export const LoginForm = () => {
     }
 
     return (
-        <StyledLogin>
-            <StyledHeader>Login</StyledHeader>
+        <StyledLoginForm>
+            <h2>Login</h2>
             <form onSubmit={handleSubmit} >
                 <label htmlFor="username">Username</label>
                 <Input name="username" id="username" />
@@ -29,7 +18,7 @@ export const LoginForm = () => {
                 <Input name="password" id="password" />
                 <Button type="submit">Login</Button>
             </form>
-        </StyledLogin>
+        </StyledLoginForm>
     )
 }
 
